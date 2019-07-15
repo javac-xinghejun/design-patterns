@@ -12,5 +12,11 @@ public class SingletonTest {
         new Thread(()-> System.out.println(Singleton.getInstance().toString())).start();
         new Thread(()-> System.out.println(Singleton.getInstance().toString())).start();
         new Thread(()-> System.out.println(Singleton.getInstance().toString())).start();
+        new Thread(()-> System.out.println(Singleton.getInstance().toString())).start();
+        new Thread(()-> System.out.println(Singleton.getInstance().toString())).start();
+        new Thread(()-> System.out.println(Singleton.getInstance().toString())).start();
+        new Thread(()-> System.out.println(Singleton.getInstance().toString())).start();
+        new Thread(()-> System.out.println(Singleton.getInstance().toString())).start();
+        new Thread(()-> System.out.println(Singleton.getInstance().toString())).start();
     }
 }
