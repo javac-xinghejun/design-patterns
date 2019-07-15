@@ -7,13 +7,14 @@ public class Singleton {
 
     private static Singleton instance;
 
-    public static Singleton getInstance() {
+    public static synchronized Singleton getInstance() {
         if (instance == null) {
-            return new Singleton();
+            instance = new Singleton();
         }
         return instance;
     }
 
     private Singleton() {
     }
+
 }
