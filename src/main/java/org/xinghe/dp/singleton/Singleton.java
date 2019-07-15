@@ -5,12 +5,9 @@ package org.xinghe.dp.singleton;
  */
 public class Singleton {
 
-    private static Singleton instance;
+    private static Singleton instance = new Singleton();
 
-    public static synchronized Singleton getInstance() {
-        if (instance == null) {
-            instance = new Singleton();
-        }
+    public static Singleton getInstance() {
         return instance;
     }
 
